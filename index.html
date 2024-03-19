@@ -1,28 +1,45 @@
 <!DOCTYPE html>
+<!-- Defines the document type and version of HTML -->
 <html lang="en">
+  <!-- The root element of the document, with the language set to English -->
   <head>
+    <!-- Contains meta-information about the document -->
     <meta charset="UTF-8" />
+    <!-- Specifies the character encoding for the document (UTF-8 is widely used and recommended) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Ensures the site is mobile-responsive by controlling the layout on different screens -->
     <title>Jad Habib's Resume</title>
+    <!-- Sets the title of the document, shown in the browser's title bar or tab -->
     <link rel="stylesheet" href="style.css" />
+    <!-- Links an external CSS file to style the document -->
   </head>
   <body>
+    <!-- Contains the content of the document -->
     <header>
+      <!-- Defines a header for the document or a section -->
       <div class="header-content">
+        <!-- A container for the header content, styled using a CSS class -->
         <h1>Jad Habib</h1>
+        <!-- The main title or name in the header -->
         <h1>20230506</h1>
         <p>
           Greater Paris Metropolitan Region |
           <a href="mailto:jadhabib2005@gmail.com">jadhabib2005@gmail.com</a> |
+          <!-- Creates a hyperlink to email -->
           <a href="https://linkedin.com/in/jad-habib-7b174a257">LinkedIn</a> |
+          <!-- Creates a hyperlink to a LinkedIn profile -->
           0744711739
         </p>
       </div>
       <img src="Me.jpg" alt="Jad Habib" class="header-image" />
+      <!-- An image in the header, styled with CSS -->
     </header>
     <section id="summary">
+      <!-- A section for the summary, with a unique identifier -->
       <h2>Summary</h2>
+      <!-- The heading for the summary section -->
       <p>
+        <!-- A paragraph with the summary text -->
         As a Law and Computer Science student, I am fascinated by the
         intersection of legal and technological issues,and how they affect
         society and individuals. I am currently in my first year of studies, and
@@ -48,7 +65,7 @@
         know nothing."
       </p>
     </section>
-    <section id="experience">
+    <section id="experience"> <!-- A section for experience, with a unique identifier -->
       <h2>Experience</h2>
       <div class="job">
         <h3>Volunteer Mentor, AFEV</h3>
@@ -268,6 +285,7 @@
     </section>
     <script>
       // Function to be called whenever an intersection occurs
+      <!-- Script tags can be used to include JavaScript directly or link to external JS files -->
       function onEntry(entry) {
         entry.forEach((change) => {
           if (change.isIntersecting) {
@@ -278,6 +296,7 @@
             });
           } else {
             change.target.classList.remove("element-visible");
+            // Optional: If you want to reset the animation when the section is not in view
             change.target.querySelectorAll("h2, h3").forEach((header) => {
               header.classList.remove("animate-underline");
             });
