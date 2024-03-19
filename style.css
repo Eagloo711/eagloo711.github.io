@@ -13,7 +13,7 @@ body {
     line-height: 1.6; /* Sets the spacing between lines of text */
     padding: 20px; /* Adds padding around the content of the whole page */
     text-align: center; /* Centers text within elements */
-    background-image: url('background.jpg'); /* Sets a background image for the page */
+    background-image: url('Background.jpg'); /* Sets a background image for the page */
     background-size: cover; /* Ensures the background image covers the entire page */
     background-position: center; /* Centers the background image */
     background-attachment: fixed; /* Keeps the background image fixed in place when scrolling */
